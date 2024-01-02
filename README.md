@@ -9,7 +9,7 @@ In this experiment, I have put a boilerplate for cross-platform developers to in
 
 # Lab Setup
 ![](figs/Matlab_MQTT_Python.png)
-
+<br>
 Setting up the environment requires the following:
 1. __MATLAB Server__: A PC running MATLAB with _Industrial Communication Toolbox_ installed. 
 2. __MQTT Broker__: A Ubuntu 22.04 server VM with _Mosquitto_ MQTT broker installed. 
@@ -20,8 +20,9 @@ Setting up the environment requires the following:
 Several options for an MQTT broker include cloud-based, on-host, remote, etc. However, I chose to isolate the broker runtime using a Ubuntu 22.04 server VM. A docker container would also do the same.
 
 Ensure the Virtual Network adapter attached to the VM is on the same network as the other systems. In my case, I have bridged the VM's vNIC to my Wi-Fi network. 
-![](figs/vNIC.png)
 
+![](figs/vNIC.png)
+<br>
 ### Installing Mosquitto and configuring the broker  for remote access
 Installing _Mosquitto_ is simple, just run the following commands 
 ```bash
@@ -213,7 +214,7 @@ if __name__ =='__main__':
     main()
 ```
 ![](figs/output.png)
-
+<br>
 # Conclution
 Cross-platform integration of simulation is highly beneficial as it allows taking advantage of the best of both platforms. However, the MQTT package in MATLAB is compatible with C-level code generation through Simulink. To use MQTT in Simulink a _Hardware-in-the-Loop_ option must be used. 
 
